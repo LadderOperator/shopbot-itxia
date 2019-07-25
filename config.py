@@ -13,4 +13,3 @@ PORT = 8080
 
 SUPERUSERS = {1020883511}
 COMMAND_START = ['',re.compile(r'[/!]+')]
-TULING_API_KEY = '4fdae790b0f247449a2d134feb3aecba'
