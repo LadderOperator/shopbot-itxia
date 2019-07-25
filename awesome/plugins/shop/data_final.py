@@ -24,7 +24,7 @@ async def get_the_final(result: str) -> str:
     
     td = re.compile('<td.*?>(.*?)</td>')
     url = 'https://www.yuque.com/api/v2/repos/385391/docs/2185141'
-    url_head = {'User-Agent':'Mozilla/5.0','content-type':'application/json','X-Auth-Token':'kxiqyyLD2dtRROObtRL50IgswgWW07cBEK8uvP2R'}
+    url_head = {'User-Agent':'Mozilla/5.0','content-type':'application/json','X-Auth-Token':'{token}'}
     r = req.get(url,headers = url_head)
     r_content = BeautifulSoup(r.text,'html.parser')
     r_content_table = r_content.find_all('tr')
